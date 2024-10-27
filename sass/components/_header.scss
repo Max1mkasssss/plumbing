@@ -1,0 +1,91 @@
+@mixin flex($justify-content){ 
+    display: flex;
+    justify-content: $justify-content;
+    align-items: center;
+}
+.header-background{ 
+    background: rgba(6, 7, 7, 0.85);
+    backdrop-filter: blur(75px);
+}
+.nav-bar{
+    @include flex(space-between);
+    .left-part-header{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+}
+.header-text{ 
+    color: #939393;
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+}
+.header-address{ 
+    @include flex(center); 
+    gap: 32px;
+    .tel-wrapper{ 
+        @include flex(center); 
+        .header-tel{    
+            color: #999;
+            text-align: right;
+            font-family: "PT Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
+
+.section-hero{ 
+    margin-top: 50px; 
+    .section-hero-wrapper{ 
+        display: flex;
+        justify-content: space-between;
+        .left-part-section-hero{ 
+            width: 590px;
+            .main-h1{ 
+                padding-top: 30px;
+                color: #FFF;
+                font-family: "Roboto";
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 64px; 
+            }
+        }
+    }
+}
+
+.list-about{ 
+    margin-top: 55px;
+    .list-about-item{ 
+        cursor: pointer;
+        .list-about-item-wrapper{ 
+            @include flex(left); 
+            gap: 20px;
+            p{ 
+                color: #BEBEBE;
+                font-family: "PT Sans";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 100% */
+            }
+        }
+        .line{ 
+            width: 375px;
+            height: 1px;
+            flex-shrink: 0;
+            background: linear-gradient(90deg, #4B4B4B 0%, rgba(38, 38, 37, 0.00) 100%);
+        }
+    }
+}
+
+.lines-icon{ 
+    margin-top: 240px;
+}

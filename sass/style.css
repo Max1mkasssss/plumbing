@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.header-background {
+  background: rgba(6, 7, 7, 0.85);
+  -webkit-backdrop-filter: blur(75px);
+          backdrop-filter: blur(75px);
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar .left-part-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.header-text {
+  color: #939393;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.header-address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.header-address .tel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-address .tel-wrapper .header-tel {
+  color: #999;
+  text-align: right;
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.section-hero {
+  margin-top: 50px;
+}
+.section-hero .section-hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.section-hero .section-hero-wrapper .left-part-section-hero {
+  width: 590px;
+}
+.section-hero .section-hero-wrapper .left-part-section-hero .main-h1 {
+  padding-top: 30px;
+  color: #FFF;
+  font-family: "Roboto";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+}
+
+.list-about {
+  margin-top: 55px;
+}
+.list-about .list-about-item {
+  cursor: pointer;
+}
+.list-about .list-about-item .list-about-item-wrapper {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+}
+.list-about .list-about-item .list-about-item-wrapper p {
+  color: #BEBEBE;
+  font-family: "PT Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+}
+.list-about .list-about-item .line {
+  width: 375px;
+  height: 1px;
+  flex-shrink: 0;
+  background: linear-gradient(90deg, #4B4B4B 0%, rgba(38, 38, 37, 0) 100%);
+}
+
+.lines-icon {
+  margin-top: 240px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li, ul, h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}/*# sourceMappingURL=style.css.map */
